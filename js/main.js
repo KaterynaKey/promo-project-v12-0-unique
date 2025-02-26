@@ -279,7 +279,7 @@ function wrapLeftSideImg(htmlContent) {
                 <td align="left" style="font-family:'Roboto', Arial, Helvetica, sans-serif;font-size:18px;font-style:normal;font-weight:normal;line-height:1.5;text-align:left;color:#000000;padding-bottom: 14px; padding-top: 14px;">
                   <a align="left" href="insertlink" target="_blank" style="display: inline-block; float: left; width: 50%; max-width: 50%; margin-right: 18px; margin-bottom: 12px;">
                     <img alt="Preview" height="224"
-                         align="right"
+                         align="left"
                          src="/preview"
                          style="border:0;display:inline-block;outline:none;text-decoration:none;height:auto;max-height: 224px;max-width: 100%; width: 100%;font-size:13px;object-fit: contain;"
                          width="250"/>
