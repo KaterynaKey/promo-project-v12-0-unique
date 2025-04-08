@@ -5,7 +5,7 @@ function italicLinks(htmlContent) {
     htmlContent = htmlContent.replace(/<a[^>]*>/gi, '').replace(/<\/a>/gi, '');
     blueColors.forEach((color, index) => {
         const regex = new RegExp(`<span[^>]*style="[^"]*color:\\s*${color}[^"]*;[^"]*font-style:\\s*italic[^"]*"[^>]*>(.*?)<\\/span>`, 'gi');
-        htmlContent = htmlContent.replace(regex, '<a href="insertlink" style="font-family:\'Roboto\', Arial, Helvetica, sans-serif;text-decoration: underline;font-weight: 700;"><em>$1</em></a>');
+        htmlContent = htmlContent.replace(regex, '<a href="insertlink" style="font-family:\'Roboto\', Arial, Helvetica, sans-serif;text-decoration: underline;font-weight: 700;color: #0000EE;"><em>$1</em></a>');
     });
 
     return htmlContent;
@@ -14,7 +14,7 @@ function italicLinks(htmlContent) {
 function linksStyles(htmlContent) {
     blueColors.forEach((color, index) => {
         const reg = new RegExp(`<span[^>]*style="[^"]*color:\\s*(${color})[^"]*"[^>]*>(.*?)<\\/span>`, 'gi');
-        htmlContent = htmlContent.replace(reg, '<a href="insertlink" style="font-family:\'Roboto\', Arial, Helvetica, sans-serif;text-decoration: underline;font-weight: 700;">$2</a>');
+        htmlContent = htmlContent.replace(reg, '<a href="insertlink" style="font-family:\'Roboto\', Arial, Helvetica, sans-serif;text-decoration: underline;font-weight: 700;color: #0000EE;">$2</a>');
     });
 
     return htmlContent;
